@@ -1,13 +1,13 @@
-## What is Kali?
-Kali is an Open Source Linux Cheat For Counter Strike : Global Offensive. 
-This cheat is a fork of fork of fork of fork: 
+## What is Aimtux?
+AimTux is an Open Source Linux Cheat For Counter Strike : Global Offensive. 
+This cheat is a fork of fork of fork of fork of fork: 
 
-Linux Basehook -> Aimtux -> Fuzion -> MissedIT -> EyeHook -> Kali.
+Linux Basehook -> Aimtux -> Fuzion -> MissedIT -> EyeHook -> Kali - > Aimtux Reborn.
 ## Compiling
 
 **Note:** _Do NOT download or compile as the root user._
 
-#### Download the dependencies required to build Kali:
+#### Download the dependencies required to build AimTux:
 
 If you are having problems compiling make sure you've got the latest version of `g++`.
 
@@ -28,36 +28,36 @@ sudo dnf install cmake gcc-c++ gdb git libstdc++-static mesa-libGL-devel SDL2-de
 
 ===================
 
-#### Download Kali:
+#### Download AimTux:
 
 ```bash
-git clone --recursive https://github.com/ArnoldasMk/Kali
+git clone --recursive https://github.com/libramatyas/AimTux-Reborn
 ```
 
 ```bash
-cd Kali
+cd AimTux
 ```
 
 ===================
 
 #### Compile with build script
 
-You can build easily with the included Kali script.
+You can build easily with the included AimTux script.
 ```bash
-./Kali -b
+./aimtux -b
 ```
 or 
 ```bash
-./Kali --build
+./aimtux --build
 ```
 
 You can later update with 
 ```bash
-./Kali -u
+./aimtux -u
 ```
 or
 ```bash
-./Kali --update
+./aimtux --update
 ```
 
 
@@ -65,18 +65,18 @@ or
 
 First of all, make sure CS:GO is open, and you are not in any official valve server. However, it is not recommended to inject while CS:GO is loading into a map. 
 
-Navigate to the directory where Kali was built if you have not ready.
+Navigate to the directory where AimTux was built if you have not ready.
 ```bash
-cd Kali
+cd AimTux
 ```
 
-Now, you can inject the hack with the Kali script
+Now, you can inject the hack with the AimTux script
 ```bash
-./Kali -l
+./aimtux -l
 ```
 or 
 ```bash
-./Kali --load
+./aimtux --load
 ```
 
 You might be prompted to enter in your password, this is because the injection script requires root access.
@@ -85,28 +85,28 @@ You might be prompted to enter in your password, this is because the injection s
 
 ## Using the hack
 
-Now that Kali has been injected into the game, press <kbd>Insert</kbd> on your keyboard to open the hack menu (<kbd>ALT</kbd>+<kbd>I</kbd> if you are using a laptop).
+Now that AimTux has been injected into the game, press <kbd>Insert</kbd> on your keyboard to open the hack menu (<kbd>ALT</kbd>+<kbd>I</kbd> if you are using a laptop).
 
 ## Unloading the hack
 
 If you wish to unload the hack from the game, you can do so by entering the command:
 ```bash
-./Kali -ul
+./aimtux -ul
 ```
 or
 ```bash
-./Kali --unload
+./aimtux --unload
 ```
 ## Configs
 
 Configs are stored in a hidden directory in your home folder. Specifically 
 ```
-~/.config/Kali/
+~/.config/AimTuxRBRN/
 ```
 
 Each `config.json` is stored in a seperately named folder (The name you see in-game, in the config window). 
 
-To add a config, create a folder inside of the `~/.config/KaliGH/` folder with a name of your choice, and paste the `config.json` inside of that folder.
+To add a config, create a folder inside of the `~/.config/AimTuxGH/` folder with a name of your choice, and paste the `config.json` inside of that folder.
 
 To see hidden folders inside your home folder, press <kbd>CTRL</kbd>+<kbd>H</kbd> when using a file manager.
 
@@ -143,6 +143,8 @@ Special thanks to the Fuzion For Panaroma Update And For Good Quality Codes: [ht
 Special thanks to the MissedIT project: [https://github.com/HackerPolice/MissedIT](https://github.com/HackerPolice/MissedIT).
 
 Special thanks to the EyeHook project: [https://github.com/itsme2417/EyeHook](https://github.com/itsme2417/EyeHook).
+
+Special thanks to the Kali project: [https://github.com/ArnoldasMK/Kali](https://github.com/ArnoldasMK/Kali).
 
 Special thanks to Unknowncheats For Various Things :)
 
