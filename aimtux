@@ -66,7 +66,7 @@ function build() {
   fi
 
   echo $BUILD_ID >build_id
-  mv libKali.so "$BUILD_ID"
+  mv libAimTux.so "$BUILD_ID"
 
   strip -s -v "$BUILD_ID"
   patchelf --set-soname "$BUILD_ID" "$BUILD_ID" || echo_orange "Warning: your patchelf version does not support \"--set-soname\"\nConsider building from source: https://github.com/NixOS/patchelf"
@@ -113,7 +113,7 @@ function build_debug() {
   fi
 
   echo $BUILD_ID >build_id
-  mv libKali.so "$BUILD_ID"
+  mv libAimTux.so "$BUILD_ID"
 
   strip -s -v "$BUILD_ID"
   patchelf --set-soname "$BUILD_ID" "$BUILD_ID" || echo_orange "Warning: your patchelf version does not support \"--set-soname\"\nConsider building from source: https://github.com/NixOS/patchelf"
@@ -130,7 +130,7 @@ function load() {
   fi
 
   if [ ! -d ".git" ]; then
-    echo "We have detected that you have downloaded Kali-master.zip from GitHub.com. This is the WRONG way to download! Please download Kali by cloning the Git repository: 'git clone --recursive https://github.com/ArnoldasMk/Kali.git'"
+    echo "We have detected that you have downloaded AimTux-master.zip from GitHub.com. This is the WRONG way to download! Please download AimTux by cloning the Git repository: 'git clone --recursive https://github.com/ArnoldasMk/AimTux.git'"
   fi
 
   # pBypass for crash dumps being sent
@@ -139,7 +139,7 @@ function load() {
   sudo mkdir --mode=000 /tmp/dumps # Make it as root with no permissions
 
   if [ ! -f build_id ]; then
-    echo "Build ID not found. Please build using the './Kali -b' script."
+    echo "Build ID not found. Please build using the './AimTux -b' script."
     exit
   fi
 
@@ -147,7 +147,7 @@ function load() {
 
   # Credit: Aixxe @ aixxe.net
   if grep -q "$filename" /proc/"$csgo_pid"/maps; then
-    echo_orange "If its not already Injected, try to Inject with sudo (sudo ./Kali -l) "
+    echo_orange "If its not already Injected, try to Inject with sudo (sudo ./AimTux -l) "
     exit
   fi
   echo "Injecting Build ID: $filename"
@@ -203,7 +203,7 @@ function load_debug() {
   fi
 
   if [ ! -d ".git" ]; then
-    echo "We have detected that you have downloaded Kali-master.zip from GitHub.com. This is the WRONG way to download! Please download Kali by cloning the Git repository: 'git clone --recursive https://github.com/ArnoldasMk/Kali.git'"
+    echo "We have detected that you have downloaded AimTux-master.zip from GitHub.com. This is the WRONG way to download! Please download AimTux by cloning the Git repository: 'git clone --recursive https://github.com/ArnoldasMk/AimTux.git'"
   fi
 
   # pBypass for crash dumps being sent
@@ -212,7 +212,7 @@ function load_debug() {
   sudo mkdir --mode=000 /tmp/dumps # Make it as root with no permissions
 
   if [ ! -f build_id ]; then
-    echo "Build ID not found. Please build using the './Kali -b' script."
+    echo "Build ID not found. Please build using the './AimTux -b' script."
     exit
   fi
 
@@ -220,7 +220,7 @@ function load_debug() {
 
   # Credit: Aixxe @ aixxe.net
   if grep -q "$filename" /proc/"$csgo_pid"/maps; then
-    echo_orange "If its not already Injected, try to Inject with sudo (sudo ./Kali -l) "
+    echo_orange "If its not already Injected, try to Inject with sudo (sudo ./AimTux -l) "
     exit
   fi
   echo "Injecting Build ID: $filename"
@@ -365,13 +365,13 @@ function update_force() {
 }
 
 function help() {
-  echo "[-b or --build] > to build the Kali"
-  echo "[-bd or --build_debug] > to build and debug the Kali"
-  echo "[-l or --load] > to load the Kali"
-  echo "[-ul or --unload] > to unload the Kali"
+  echo "[-b or --build] > to build the AimTux"
+  echo "[-bd or --build_debug] > to build and debug the AimTux"
+  echo "[-l or --load] > to load the AimTux"
+  echo "[-ul or --unload] > to unload the AimTux"
   echo "[-c or --clean] > to clean the mess"
-  echo "[-u or --update] > to update the Kali"
-  echo "[-uf or --update-force] > to forcefuly update the Kali and reverte the local changes"
+  echo "[-u or --update] > to update the AimTux"
+  echo "[-uf or --update-force] > to forcefuly update the AimTux and reverte the local changes"
   echo "[-ru or --reverce-update] > to reverce the update if that causing any issue"
   echo "[-k or --kill] > to kill processes related to steam and csgo"
 }

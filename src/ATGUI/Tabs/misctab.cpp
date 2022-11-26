@@ -5,7 +5,7 @@
 
 #include "../../config.h"
 #include "../../interfaces.h"
-#include "../../Kali.h"
+#include "../../AimTux.h"
 #include "../../settings.h"
 #include "../../Utils/xorstring.h"
 #include "../imgui.h"
@@ -477,7 +477,7 @@ void MiscCustomizations::RenderMainMenu(ImVec2 &pos, ImDrawList *draw, int sideT
 				ImGui::Separator();
 				if (ImGui::Button(XORSTR("Unload")))
 				{
-					Kali::SelfShutdown();
+					AimTux::SelfShutdown();
 				}
 				if (ImGui::Button(XORSTR("Reset resolver misses")))
 				{

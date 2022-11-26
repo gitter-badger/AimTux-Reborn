@@ -79,7 +79,7 @@ static void BgDecorations()
 	draw->AddRectFilled(ImVec2(pos.x, pos.y), ImVec2(pos.x + 1128, pos.y + 50), ImColor(2, 6, 11), 0, 3);
 	// Footer
 	draw->AddRectFilled(ImVec2(pos.x, pos.y + 835), ImVec2(pos.x + 1128, pos.y + 865), ImColor(2, 6, 11), 0, 4 | 8);
-	draw->AddText(info, 13.f, ImVec2(pos.x + 12, pos.y + 845), ImColor(255, 255, 255), "Kali");
+	draw->AddText(info, 13.f, ImVec2(pos.x + 12, pos.y + 845), ImColor(255, 255, 255), "AimTux");
 	//  Side Panel Bg
 	draw->AddRectFilled(ImVec2(pos.x, pos.y + 55), ImVec2(pos.x + 160, pos.y + 835), ImColor(2, 19, 30, 150));
 	ImGui::SetCursorPos(ImVec2(10, 10));
@@ -143,7 +143,7 @@ static void VisualsTab()
 		VisualsMaterialConfig::RenderMainMenu(pos, draw, subtabs);
 		break;
 	case Menu:
-		// VisualsMenu::RenderMainMenu(pos, draw, subtabs);
+		VisualsMenu::RenderMainMenu(pos, draw, subtabs);
 		break;
 	}
 }

@@ -9,7 +9,7 @@
 #include "fonts.h"
 #include "Hooks/hooks.h"
 #include "sdlhook.h"
-#include "Kali.h"
+#include "AimTux.h"
 #include "EventListener.h"
 #include "Utils/xorstring.h"
 #include "Utils/bonemaps.h"
@@ -21,7 +21,7 @@
 
 static EventListener *eventListener = nullptr;
 
-const char *Util::logFileName = "/tmp/Kali.log";
+const char *Util::logFileName = "/tmp/AimTux.log";
 std::vector<VMT *> createdVMTs;
 
 void MainThread()
@@ -151,7 +151,7 @@ void MainThread()
     {
         BoneMaps::BuildAllBonemaps();
     }
-    cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("\nKali Successfully loaded.\n"));
+    cvar->ConsoleColorPrintf(ColorRGBA(0, 225, 0), XORSTR("\nAimTux Reborn Successfully loaded.\n"));
 }
 /* Entrypoint to the Library. Called when loading */
 int __attribute__((constructor)) Startup()
@@ -192,9 +192,9 @@ void __attribute__((destructor)) Shutdown()
 
     *s_bOverridePostProcessingDisable = false;
 
-    cvar->ConsoleColorPrintf(ColorRGBA(255, 0, 0), XORSTR("Kali Unloaded successfully.\n"));
+    cvar->ConsoleColorPrintf(ColorRGBA(255, 0, 0), XORSTR("AimTux Reborn Unloaded successfully.\n"));
 }
-void Kali::SelfShutdown()
+void AimTux::SelfShutdown()
 {
     Shutdown();
 }

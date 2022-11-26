@@ -131,7 +131,7 @@ void Eventlog::FireGameEvent(IGameEvent *event)
 
 		std::string damageLog = "damage: -";
 		damageLog += std::to_string(event->GetInt(XORSTR("dmg_health")));
-		std::string consoleLog = "[Kali] Hit ";
+		std::string consoleLog = "[AimTux] Hit ";
 		if ((engine->GetPlayerForUserID(hurt_player_id) == engine->GetLocalPlayer() && (engine->GetPlayerForUserID(attacker_id) != engine->GetLocalPlayer())))
 		{
 			damageLog += XORSTR(" from ");
