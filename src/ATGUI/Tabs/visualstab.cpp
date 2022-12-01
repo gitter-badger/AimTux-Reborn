@@ -985,22 +985,17 @@ void VisualsMenu::RenderMainMenu(ImVec2 &pos, ImDrawList *draw, int sideTabIndex
 	ImGui::BeginGroup();
 	{
 		ImGui::CheckboxFill(XORSTR("Enabled"), &Settings::ESP::enabled);
-		ImGui::Text("Hi");
 	}
 	ImGui::EndGroup();
 
 	ImGui::SetCursorPos(ImVec2(180, 100));
 	ImGui::BeginGroup();
 	{
-		ImGui::Columns(2, nullptr, false);
+		ImGui::BeginChild(XORSTR("##Visuals2"), ImVec2(0, 1000), true);
 		{
-			ImGui::BeginChild(XORSTR("##Visuals2"), ImVec2(0, 1000), true);
-			{
-				colorPicker();
-			}
-			ImGui::EndChild();
+			colorPicker();
 		}
-		ImGui::EndColumns();
+		ImGui::EndChild();
 	}
 }
 
