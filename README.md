@@ -3,6 +3,16 @@ AimTux is an Open Source Linux Cheat For Counter Strike : Global Offensive.
 This cheat is a fork of fork of fork of fork of fork: 
 
 Linux Basehook -> Aimtux -> Fuzion -> MissedIT -> EyeHook -> Kali - > Aimtux Reborn.
+
+## Info board
+
+ty so so much for the support <3
+
+personal discord server if you want to talk w me :): https://dsc.gg/czechian
+site: https://aimtux.netlify.app
+gui loader :flushed: : https://github.com/libramatyas/AimTux-Injector
+my cfgs (should not crash the whole game if used correctly): https://github.com/libramatyas/Personal-Aimtux-Configs
+
 ## Compiling
 
 **Note:** _Do NOT download or compile as the root user._
