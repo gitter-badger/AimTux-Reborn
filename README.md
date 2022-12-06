@@ -1,4 +1,7 @@
 ## What is Aimtux Reborn?
+
+[![Join the chat at https://gitter.im/aimtux2/community](https://badges.gitter.im/aimtux2/community.svg)](https://gitter.im/aimtux2/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 AimTux is an Open Source Linux Cheat For Counter Strike : Global Offensive. 
 This cheat is a fork of fork of fork of fork of fork: 
 
