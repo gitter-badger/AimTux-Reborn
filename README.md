@@ -9,8 +9,11 @@ Linux Basehook -> Aimtux -> Fuzion -> MissedIT -> EyeHook -> Kali - > Aimtux Reb
 ty so so much for the support <3
 
 personal discord server if you want to talk w me :): https://dsc.gg/czechian
+
 site: https://aimtux.netlify.app
+
 gui loader :flushed: : https://github.com/libramatyas/AimTux-Injector
+
 my cfgs (should not crash the whole game if used correctly): https://github.com/libramatyas/Personal-Aimtux-Configs
 
 ## Compiling
